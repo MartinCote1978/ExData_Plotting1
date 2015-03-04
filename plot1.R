@@ -8,9 +8,6 @@ power_consumption_data$Date <- as.Date(power_consumption_data$Date, format="%d/%
 power_consumption_data <- power_consumption_data[power_consumption_data$Date == "2007-02-01" |
                                                    power_consumption_data$Date == "2007-02-02", ]
 
-## Prepare the data (as necessary)
-## N/A
-
 ## Prepare the plot (i.e. opening the device)
 png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
 

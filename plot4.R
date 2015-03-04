@@ -19,6 +19,8 @@ power_consumption_data$DateTime <- strptime(paste(power_consumption_data$Date,
 png(filename = "plot4.png", width = 480, height = 480, bg = "transparent")
 
 ## Complete the plot
+### Set overall graphic devices to a 2x2 plotting areas (using
+### column - mfcol - to add the plots in the right order).
 par(mfcol=c(2, 2))
 
 ### Plot 1

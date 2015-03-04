@@ -8,14 +8,10 @@ power_consumption_data$Date <- as.Date(power_consumption_data$Date, format="%d/%
 power_consumption_data <- power_consumption_data[power_consumption_data$Date == "2007-02-01" |
                                                    power_consumption_data$Date == "2007-02-02", ]
 
-## Prepare the data (as necessary)
-### N/A
-
 ## Prepare the plot (i.e. opening the device)
 png(filename = "plot3.png", width = 480, height = 480, bg = "transparent")
 
 ## Complete the plot
-#with(power_consumption_data, plot(seq(from=ISOdate(2007,02,01), by="sec", along.with=Date ),
 with(power_consumption_data, plot(Sub_metering_1,
                                   type = "l",
                                   col = "black",
