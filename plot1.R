@@ -1,5 +1,6 @@
 # Coursera - Exploratory Data Analysis - Course Project #1 - Plot 1
 
+## Pre-requisites: Text data file must be downloaded and unzipped in the working directory.
 ## Read the data in
 power_consumption_data <- read.table(file="./household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
@@ -16,7 +17,6 @@ hist(power_consumption_data$Global_active_power,
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
      ylab = "Frequency",
-     #xlim = c(0, 6),
      ylim = c(0, 1200),
      col = "red"
      )

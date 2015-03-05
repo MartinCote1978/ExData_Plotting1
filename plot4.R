@@ -1,5 +1,6 @@
 # Coursera - Exploratory Data Analysis - Course Project #1 - Plot 4
 
+## Pre-requisites: Text data file must be downloaded and unzipped in the working directory.
 ## Read the data in
 power_consumption_data <- read.table(file="./household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
