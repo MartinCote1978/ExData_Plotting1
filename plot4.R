@@ -83,7 +83,7 @@ with(power_consumption_data, plot(Voltage,
                                   )
      )
 axis(1, at=c(1,
-             nrow(power_consumption_data[power_consumption_data$Date == "2007-02-01", ]),
+             nrow(power_consumption_data[power_consumption_data$DateTime < "2007-02-01 23:59:59", ]),
              nrow(power_consumption_data)),
      labels = c("Thu", "Fri", "Sat")
 )
@@ -104,7 +104,7 @@ with(power_consumption_data, plot(Global_reactive_power,
                                   )
      )
 axis(1, at=c(1,
-             nrow(power_consumption_data[power_consumption_data$Date == "2007-02-01", ]),
+             nrow(power_consumption_data[power_consumption_data$DateTime < "2007-02-01 23:59:59", ]),
              nrow(power_consumption_data)),
      labels = c("Thu", "Fri", "Sat")
 )
